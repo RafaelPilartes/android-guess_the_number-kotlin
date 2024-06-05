@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guess the number 🎲"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You only have 5 attempts"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/attemptsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attempts: 0"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/guessEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your guess"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:layout_marginTop="30dp"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/guessButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Guess"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
